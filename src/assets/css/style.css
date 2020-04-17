@@ -1,0 +1,433 @@
+/** Add any CSS you need to this file. */
+
+/* CSS Units: Relative Units - depends on the width of the parent element */
+/*
+*** Note ***
+- Use Relative units along with max-width
+*/
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animateleft {
+    from {
+        right: 0;
+        opacity: 1;
+    }
+
+    to {
+        right: -300px;
+        opacity: 1
+    }
+}
+
+body {
+    margin: 0 !important;
+    overflow-x: hidden;
+}
+
+nav, footer {
+    background-color: #40514e;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+
+input, textarea, select, button {
+    box-sizing: border-box;
+}
+
+i {
+    display: inline;
+    padding-right: 6px;
+}
+
+form {
+    margin: 10%;
+}
+
+.white-text {
+    color: #e4f9f5;
+    text-align: center;
+    font-family: 'Audiowire', 'Roboto', 'Open Sans', sans-serif;
+    font-size: 3vmax;
+}
+
+.green-text-md {
+    color: #40514e;
+    font-family: 'Merriweather', 'Roboto Slab', Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 3vmax;
+}
+
+.green-text-sm {
+    color: #40514e;
+    font-family: 'Merriweather', 'Roboto Slab', Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 3vmin;
+}
+
+.footer-text-header {
+    color: #e4f9f5;
+    font-family: 'Audiowire', 'Roboto', 'Open Sans', sans-serif;
+    font-size: 3vmax;
+    margin: 5px;
+}
+
+.footer-icon {
+    font-size: 3vmax;
+    color: #e4f9f5;
+    margin: 5px;
+}
+
+.footer-text {
+    color: #e4f9f5;
+    font-family: 'Audiowire', 'Roboto', 'Open Sans', sans-serif;
+    font-size: 3vmin;
+    padding: 5px;
+}
+
+.store-signature {
+    text-align: center;
+    color: #e4f9f5;
+    font-family: 'Audiowire', 'Roboto', 'Open Sans', sans-serif;
+    font-size: 6vmax;
+}
+
+.navbar-item a {
+    padding: 1rem;
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3vmin;
+}
+
+.dropdown-container {
+    display: none;
+}
+
+.hide-large {
+    display: none !important;
+}
+
+.flex-container-col {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0;
+    border: 0;
+    padding-top: 3vmax;
+    height: fit-content;
+}
+
+.flex-container-row {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    border: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(30vmin, 1fr));
+    grid-gap: 20px;
+}
+
+.page-content {
+    padding: 5vw;
+}
+
+.product-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    height: fit-content;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.product-img {
+    width: 100%;
+    height: 150px;
+}
+
+.product-content {
+    margin: 15px;
+    overflow: auto;
+}
+
+.product-name {
+    color: #40514e;
+    text-align: center;
+    font-size: 3vmin;
+}
+
+.product-desc {
+    color: #40514e;
+    font-family: 'Merriweather', 'Roboto Slab', Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 2vmax;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-category {
+    color: #40514e;
+    text-align: center;
+    font-size: 3vmin;
+    padding-top: 10px;
+}
+
+.product-price {
+    color: #40514e;
+    text-align: center;
+    font-size: 3vmin;
+    padding: 10px;
+}
+
+.user-options {
+    text-align: center;
+}
+
+.buy-btn {
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #11999e;
+    color: #e4f9f5;
+    font-size: 3vmin;
+    cursor: pointer;
+}
+
+.subscribe-group {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subscribe-group input[type="email"] {
+    display: inline-block;
+	border: 1px solid #11999e;
+	background:#FFF;
+    margin: 0 0 5px;
+    padding: 5px;
+    width: 30vmax;
+    color: #40514e;
+    font-family: 'Merriweather', 'Roboto Slab', Times, 'Times New Roman', serif;
+    font-size: 3vmin;
+}
+
+.subscribe-group input[type="email"]:hover {
+    -webkit-transition:border-color 0.4s ease-in-out;
+	-moz-transition:border-color 0.4s ease-in-out;
+	transition:border-color 0.4s ease-in-out;
+	border:1px solid #40514e;
+}
+
+.send-btn {
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 30vmax;
+    background-color: #11999e;
+    color: #e4f9f5;
+    font-size: 3vmin;
+    display: block;
+    align-self: center;
+    cursor: pointer;
+}
+
+.send-btn:hover, .buy-btn:hover {
+    background: #0c6f72;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+.form-group {
+    width: 40vmax;
+    padding: 3vmin;
+    display: block;
+}
+
+#store-name-header {
+    position: relative;
+    top: 30%;
+}
+
+#description-header {
+    position: relative;
+    top: 20%;
+}
+
+#background-header {
+    width: 100%;
+    height: 30vmax;
+    background-position:  bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(../../images/undraw_teaching_f1cm.svg);
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+}
+
+#show-sidebar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+#close-sidebar {
+    display: none;
+}
+
+#sidebar {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    display: none;
+    background-color: #e4f9f5;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    animation: animateright 0.4s;
+}
+
+#sidebar button {
+    text-decoration: none;
+    font-size: 3vmin;
+    color: #40514e;
+    display: inherit;
+    border: none;
+    padding: 1rem;
+    background: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+#sidebar button:hover {
+    background-color: #11999e;
+    color: #40514e;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    animation: opac 0.8s;
+}
+
+#user-feedback {
+    background-color: #e4f9f5;
+    max-width: 610px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#user-feedback input[type="text"],
+#user-feedback input[type="email"],
+#user-feedback input[type="tel"],
+#user-feedback textarea {
+    width: 100%;
+	border: 1px solid #11999e;
+	background:#FFF;
+	margin: 0 0 5px;
+    padding: 10px;
+    color: #40514e;
+    font-family: 'Merriweather', 'Roboto Slab', Times, 'Times New Roman', serif;
+    font-size: 3vmin;
+} 
+
+#user-feedback input[type="text"]:hover,
+#user-feedback input[type="email"]:hover,
+#user-feedback input[type="tel"]:hover,
+#user-feedback textarea:hover {
+    -webkit-transition:border-color 0.4s ease-in-out;
+	-moz-transition:border-color 0.4s ease-in-out;
+	transition:border-color 0.4s ease-in-out;
+	border:1px solid #40514e;
+}
+
+#user-feedback input[type='checkbox'],
+#user-feedback input[type='radio'] {
+    opacity: 0;
+}
+
+#store-name-footer {
+    padding-top: 5px;
+}
+
+#store-logo, #subscribe-form {
+    width: 100%;
+} 
+
+#about-us, #follow-us {
+    width: 30%;
+}
+
+#contact-info {
+    width: 40%;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (min-width: 900px) { 
+    
+
+
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (min-width: 640px) {
+    
+
+}
