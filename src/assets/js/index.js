@@ -81,7 +81,7 @@ function displayProduct(product) {
     userOptions.className = "user-options";
     var hireBtn = document.createElement('button');
     hireBtn.className = "buy-btn";
-    hireBtn.innerText = "Buy";
+    hireBtn.innerText = "Add to cart";
     userOptions.appendChild(hireBtn);
     // Attach all properties to Product Card
     card.appendChild(img);

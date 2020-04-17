@@ -35,7 +35,7 @@ body {
 }
 
 nav, footer {
-    background-color: #40514e;
+    background: linear-gradient(45deg, #30e3ca, #40514e);
 }
 
 footer {
@@ -61,11 +61,18 @@ form {
     margin: 10%;
 }
 
-.white-text {
+.white-text-md {
     color: #e4f9f5;
     text-align: center;
     font-family: 'Audiowire', 'Roboto', 'Open Sans', sans-serif;
     font-size: 3vmax;
+}
+
+.white-text-sm {
+    color: #e4f9f5;
+    text-align: center;
+    font-family: 'Audiowire', 'Roboto', 'Open Sans', sans-serif;
+    font-size: 3vmin;
 }
 
 .green-text-md {
@@ -133,6 +140,7 @@ form {
     border: 0;
     padding-top: 3vmax;
     height: fit-content;
+    width: 100%;
 }
 
 .flex-container-row {
@@ -186,7 +194,7 @@ form {
     color: #40514e;
     font-family: 'Merriweather', 'Roboto Slab', Times, 'Times New Roman', serif;
     text-align: center;
-    font-size: 2vmax;
+    font-size: 3vmin;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -221,6 +229,7 @@ form {
     color: #e4f9f5;
     font-size: 3vmin;
     cursor: pointer;
+    border: 0;
 }
 
 .subscribe-group {
@@ -261,6 +270,7 @@ form {
     display: block;
     align-self: center;
     cursor: pointer;
+    border: 0;
 }
 
 .send-btn:hover, .buy-btn:hover {
@@ -271,7 +281,7 @@ form {
 }
 
 .form-group {
-    width: 40vmax;
+    width: 90%;
     padding: 3vmin;
     display: block;
 }
@@ -324,7 +334,7 @@ form {
     margin: 0;
     padding: 20px;
     display: none;
-    background-color: #e4f9f5;
+    background: linear-gradient(45deg, #30e3ca, #40514e);
     overflow: auto;
     position: fixed;
     top: 0;
@@ -336,7 +346,7 @@ form {
 #sidebar button {
     text-decoration: none;
     font-size: 3vmin;
-    color: #40514e;
+    color: #e4f9f5;
     display: inherit;
     border: none;
     padding: 1rem;
@@ -349,7 +359,6 @@ form {
 
 #sidebar button:hover {
     background-color: #11999e;
-    color: #40514e;
 }
 
 #overlay {
@@ -367,11 +376,12 @@ form {
 }
 
 #user-feedback {
-    background-color: #e4f9f5;
+    background-color: #364f6b;
     max-width: 610px;
     width: 100%;
     margin: 0 auto;
     position: relative;
+    text-align: center;
 }
 
 #user-feedback input[type="text"],
@@ -412,22 +422,9 @@ form {
 } 
 
 #about-us, #follow-us {
-    width: 30%;
+    width: 35%;
 }
 
 #contact-info {
     width: 40%;
-}
-
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (min-width: 900px) { 
-    
-
-
-}
-
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (min-width: 640px) {
-    
-
 }
